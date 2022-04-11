@@ -15,9 +15,15 @@
   (add-hook 'emacs-startup-hook
             (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
 
-
-;; Bootstrap config
-
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
+;; settings depends on emacs version
+(require 'init-version)
+
 (require 'init-elpa)
+
+(require 'init-system)
+
+(require 'init-ui)
+
+(require 'init-package)

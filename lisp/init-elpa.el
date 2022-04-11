@@ -4,9 +4,9 @@
 
 (require 'package)
 
+;; add melpa to package-archives
 (setq package-check-signature nil
       load-prefer-newer t)
-
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 ;; don't bother with the initialize, although it may cause much startup time,
@@ -29,6 +29,9 @@
       use-package-expand-minimally t)
 (require 'use-package)
 
+;; diminish & delight, as use-package optional dependency
+(use-package diminish)
+(use-package delight)
 
 (provide 'init-elpa)
 ;;; init-elpa.el ends here
