@@ -38,5 +38,5 @@
 
 (require 'init-projectile)
 
-(proivde 'init)
+(provide 'init)
 ;;; init.el ends here

@@ -62,9 +62,15 @@
   :config
   (treemacs-resize-icons 14)
   (treemacs-filewatch-mode t))
-
 (use-package treemacs-evil)
+
+(use-package popwin
+  :hook (after-init . popwin-mode))
+
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (add-hook 'window-setup-hook #'cleaner-ui)
 
 (provide 'init-ui)
+;;; init-ui.el ends here
