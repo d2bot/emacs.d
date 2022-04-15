@@ -1,4 +1,6 @@
-;;; -*- lexical-binding: t; -*-
+;;; package -- Summary
+;;; init.el  -*- lexical-binding: t; -*-
+;;; Commentary:
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
@@ -26,6 +28,15 @@
 
 (require 'init-ui)
 
+(require 'init-counsel)
+
+(require 'init-company)
+
+(require 'init-flycheck)
+
 (require 'init-package)
 
 (require 'init-projectile)
+
+(proivde 'init)
+;;; init.el ends here

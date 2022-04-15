@@ -38,6 +38,7 @@ LOAD-DURATION is the time taken in milliseconds to load FEATURE.")
     (tablist-minor-mode)))
 
 (defun sanityinc/require-times-sort-by-start-time-pred (entry1 entry2)
+  "Func."
   (< (string-to-number (elt (nth 1 entry1) 0))
      (string-to-number (elt (nth 1 entry2) 0))))
 
@@ -65,6 +66,7 @@ LOAD-DURATION is the time taken in milliseconds to load FEATURE.")
 
 
 (defun sanityinc/show-init-time ()
+  "Show init time."
   (message "init completed in %.2fms"
            (sanityinc/time-subtract-millis after-init-time before-init-time)))
 
