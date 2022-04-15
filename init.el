@@ -27,3 +27,5 @@
 (require 'init-ui)
 
 (require 'init-package)
+
+(require 'init-projectile)
