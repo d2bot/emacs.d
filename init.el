@@ -1,4 +1,3 @@
-;;; package -- Summary
 ;;; init.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 
